@@ -30,6 +30,13 @@ npx aws-cdk synth --app 'npx ts-node bin/blea-guest-fsxn-data-analytics-sample.t
 - zizmor for workflow security
 - `.githooks/pre-commit` for local checks
 
+## Common Pitfalls
+
+| Pitfall | Root Cause | Solution |
+|---------|-----------|----------|
+| AgentCore Gateway assumed us-east-1 only | Workshop examples default to us-east-1 | **ap-northeast-1 で利用可能（検証済み 2026-07）**。CDK で Gateway + Lambda を同一リージョンに合成すること |
+| `create-gateway-target` で Lambda not found | Gateway と Lambda のリージョン不一致 | 同一リージョン配置必須。クロスリージョン Lambda 呼び出しは不可 |
+
 ## Agent Output Standards
 
 > Mirror of Kiro global steering rules. Ensures compliance even when steering is not loaded.
