@@ -46,7 +46,7 @@ npx aws-cdk synth --app 'npx ts-node bin/blea-guest-fsxn-data-analytics-sample.t
 ### Naming (NetApp / AWS)
 
 - First mention uses **Amazon FSx for NetApp ONTAP**, thereafter **FSx for ONTAP**. `FSxN` / bare `FSx` / `FSx ONTAP` are forbidden.
-- S3 Access Point: **FSx for ONTAP S3 AP** (not "FSx S3 AP", not bare "S3 AP" when FSx-for-ONTAP context matters).
+- **S3 Access Point**: write **"S3 Access Points"** in full. **"S3 AP" is not a short form AWS sanctions — do not use it.** Where it could be read as an Amazon S3 access point, write "FSx for ONTAP S3 Access Points". Never "FSx S3 AP".
 - Do NOT propose: NetApp Workload Factory / NetApp Console / BlueXP. Use native equivalents (CloudWatch, ONTAP REST API, FabricPool, AWS DataSync, Snapshot/FlexClone/SnapMirror).
 - Exception: verbatim external citation titles — annotate the line with `<!-- allow:naming -->`.
 
