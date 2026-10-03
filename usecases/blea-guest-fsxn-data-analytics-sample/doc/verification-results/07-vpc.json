@@ -1,7 +1,7 @@
 {
     "Vpcs": [
         {
-            "OwnerId": "178625946981",
+            "OwnerId": "123456789012",
             "InstanceTenancy": "default",
             "CidrBlockAssociationSet": [
                 {
@@ -36,7 +36,7 @@
                 },
                 {
                     "Key": "aws:cloudformation:stack-id",
-                    "Value": "arn:aws:cloudformation:ap-northeast-1:178625946981:stack/Dev-BLEAFsxnDataAnalytics/7cd9ba00-5f42-11f1-a545-0626e09db33f"
+                    "Value": "arn:aws:cloudformation:ap-northeast-1:123456789012:stack/Dev-BLEAFsxnDataAnalytics/7cd9ba00-5f42-11f1-a545-0626e09db33f"
                 }
             ],
             "BlockPublicAccessStates": {

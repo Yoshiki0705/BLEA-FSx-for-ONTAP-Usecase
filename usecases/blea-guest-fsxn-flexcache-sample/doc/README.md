@@ -72,6 +72,8 @@ A FlexCache pattern using FSx for NetApp ONTAP to accelerate file access between
 
 ## Expected Benefits
 
+The figures below are design expectations, not measurements from this stack (未確認). They depend on WAN RTT, cache hit rate, and file size; measure in your own environment before relying on them.
+
 | Metric | Before | After |
 |--------|--------|-------|
 | File open latency (branch) | 100-300ms | < 5ms (on hit) |

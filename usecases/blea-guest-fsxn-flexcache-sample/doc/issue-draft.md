@@ -61,12 +61,14 @@ Custom Metrics Lambda → CloudWatch (CacheHitRatio, Capacity, Latency)
 
 ### Implementation Status
 
-- ✅ CDK code complete (TypeScript strict, single stack)
-- ✅ 13 Jest tests passing
-- ✅ CDK synth verified (45+ resources)
-- ✅ Custom metrics Lambda with 5-min ONTAP API polling
-- ✅ Bilingual documentation with TTL/write-back/cost analysis
-- ✅ Deployment verification complete
+| Item | Status |
+|---|---|
+| CDK code complete (TypeScript strict, single stack) | ✅ |
+| 13 Jest tests passing | ✅ |
+| CDK synth verified (45+ resources) | ✅ |
+| Custom metrics Lambda with 5-min ONTAP API polling | ✅ |
+| Bilingual documentation with TTL/write-back/cost analysis | ✅ |
+| Deployment verification complete | ✅ |
 
 ### Important Caveats
 

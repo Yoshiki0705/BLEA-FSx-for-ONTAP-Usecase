@@ -29,7 +29,7 @@
             "FileSystemId": "fs-008501f761785af19",
             "Lifecycle": "CREATED",
             "Name": "svm-analytics",
-            "ResourceARN": "arn:aws:fsx:ap-northeast-1:178625946981:storage-virtual-machine/fs-008501f761785af19/svm-01bd3e9ac588f7112",
+            "ResourceARN": "arn:aws:fsx:ap-northeast-1:123456789012:storage-virtual-machine/fs-008501f761785af19/svm-01bd3e9ac588f7112",
             "StorageVirtualMachineId": "svm-01bd3e9ac588f7112",
             "Subtype": "DEFAULT",
             "UUID": "0f10774e-5f45-11f1-b1a2-e945da23b4ef"

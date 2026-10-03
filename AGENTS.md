@@ -60,6 +60,7 @@ npx aws-cdk synth --app 'npx ts-node bin/blea-guest-fsxn-data-analytics-sample.t
 - Never commit: personal names / persona names, emails, AWS account IDs, internal IPs/hostnames, support case numbers, vendor-internal ticket IDs.
 - Use role-based references: "Storage Specialist lens", "Partner SA feedback", "an internal product request (tracked)".
 - No process-metadata noise in public docs: "Persona Review Summary", review rounds/dates/lens counts, `R1/F2/EXT/Round` tags. Weave findings inline as role-based lens notes (`> **Topic** (Role lens): ...`); relocate provenance to `.private/` (gitignored).
+- Never commit raw CloudTrail events or raw API/CLI JSON as verification evidence: the `userIdentity` block carries access-key IDs, usernames, principalId, and source IPs, plus the account ID. Record what was verified (event name, resource, result) instead. If raw output is unavoidable, strip the `userIdentity` block and the account ID first. (Incident: evidence JSON under `blea-guest-fsxn-data-analytics-sample/doc/verification-results/` carried real credentials from its first commit.)
 
 ### Bilingual docs (JA primary + EN)
 
@@ -69,6 +70,12 @@ npx aws-cdk synth --app 'npx ts-node bin/blea-guest-fsxn-data-analytics-sample.t
 ### Technical reference / guide docs
 
 - Required elements: executive summary with conclusion, FAQ/common misconceptions, selection flowchart (mermaid OK), OT/IT security considerations (when applicable), staged adoption steps, Related Documents (back-links), ≥10 inline role-based lens reviews.
+
+### Writing-style criteria
+
+The writing-style rules the `ai-style` workflow enforces (the fail tier D1/D2/D5/D14, the
+warning tier, and the manual review that outranks every count) are documented in the Hub:
+https://github.com/Yoshiki0705/FSx-for-ONTAP-Adoption-Playbook/blob/main/docs/agent/writing-quality.md
 
 ### Before committing docs
 
