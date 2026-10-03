@@ -15,7 +15,7 @@
                 }
             },
             "S3AccessPoint": {
-                "ResourceARN": "arn:aws:s3:ap-northeast-1:178625946981:accesspoint/headobj-test-s3ap",
+                "ResourceARN": "arn:aws:s3:ap-northeast-1:123456789012:accesspoint/headobj-test-s3ap",
                 "Alias": "headobj-test-s3a-ezp398gpuiixusfjkbymuqcnhaubaapn1b-ext-s3alias"
             }
         },
@@ -34,7 +34,7 @@
                 }
             },
             "S3AccessPoint": {
-                "ResourceARN": "arn:aws:s3:ap-northeast-1:178625946981:accesspoint/snowflake-test",
+                "ResourceARN": "arn:aws:s3:ap-northeast-1:123456789012:accesspoint/snowflake-test",
                 "Alias": "snowflake-test-3xzg4g6nsqexwwm1xtbt1bt637f7napn1a-ext-s3alias"
             }
         },
@@ -53,7 +53,7 @@
                 }
             },
             "S3AccessPoint": {
-                "ResourceARN": "arn:aws:s3:ap-northeast-1:178625946981:accesspoint/fsxn-eda-s3ap",
+                "ResourceARN": "arn:aws:s3:ap-northeast-1:123456789012:accesspoint/fsxn-eda-s3ap",
                 "Alias": "fsxn-eda-s3ap-fhyst3uaibf46uywh5xka84pnz8jaapn1a-ext-s3alias"
             }
         },
@@ -72,7 +72,7 @@
                 }
             },
             "S3AccessPoint": {
-                "ResourceARN": "arn:aws:s3:ap-northeast-1:178625946981:accesspoint/eda-demo-s3ap",
+                "ResourceARN": "arn:aws:s3:ap-northeast-1:123456789012:accesspoint/eda-demo-s3ap",
                 "Alias": "eda-demo-s3ap-fnwqydfpmd4gabncr8xqepjrrt131apn1a-ext-s3alias"
             }
         },
@@ -91,7 +91,7 @@
                 }
             },
             "S3AccessPoint": {
-                "ResourceARN": "arn:aws:s3:ap-northeast-1:178625946981:accesspoint/v4testkbsync",
+                "ResourceARN": "arn:aws:s3:ap-northeast-1:123456789012:accesspoint/v4testkbsync",
                 "Alias": "v4testkbsync-f4uup1usns9zk3abn7qo413kcgzgrapn1a-ext-s3alias"
             }
         },
@@ -110,7 +110,7 @@
                 }
             },
             "S3AccessPoint": {
-                "ResourceARN": "arn:aws:s3:ap-northeast-1:178625946981:accesspoint/fsxn-audit-observability",
+                "ResourceARN": "arn:aws:s3:ap-northeast-1:123456789012:accesspoint/fsxn-audit-observability",
                 "Alias": "fsxn-audit-obser-cbsi8mwwgahuh7sans3bbtxijig4sapn1b-ext-s3alias",
                 "VpcConfiguration": {
                     "VpcId": "vpc-0ae01826f906191af"
@@ -132,7 +132,7 @@
                 }
             },
             "S3AccessPoint": {
-                "ResourceARN": "arn:aws:s3:ap-northeast-1:178625946981:accesspoint/fsxn-databricks-lakehouse",
+                "ResourceARN": "arn:aws:s3:ap-northeast-1:123456789012:accesspoint/fsxn-databricks-lakehouse",
                 "Alias": "fsxn-databricks-qxuy4f4igpdh6kz8mnjdrfkcapsaoapn1b-ext-s3alias"
             }
         },
@@ -151,7 +151,7 @@
                 }
             },
             "S3AccessPoint": {
-                "ResourceARN": "arn:aws:s3:ap-northeast-1:178625946981:accesspoint/athena-verification-ap",
+                "ResourceARN": "arn:aws:s3:ap-northeast-1:123456789012:accesspoint/athena-verification-ap",
                 "Alias": "athena-verificat-e8z7oep4u3hrqr7wzke4b8k6yi65hapn1b-ext-s3alias"
             }
         },
@@ -170,7 +170,7 @@
                 }
             },
             "S3AccessPoint": {
-                "ResourceARN": "arn:aws:s3:ap-northeast-1:178625946981:accesspoint/verification-test-ap",
+                "ResourceARN": "arn:aws:s3:ap-northeast-1:123456789012:accesspoint/verification-test-ap",
                 "Alias": "verification-tes-fpg5t76dgh3xchkrudk6yc4jhgzz1apn1b-ext-s3alias"
             }
         },
@@ -189,7 +189,7 @@
                 }
             },
             "S3AccessPoint": {
-                "ResourceARN": "arn:aws:s3:ap-northeast-1:178625946981:accesspoint/verification-readonly-ap",
+                "ResourceARN": "arn:aws:s3:ap-northeast-1:123456789012:accesspoint/verification-readonly-ap",
                 "Alias": "verification-rea-5g9jigcdoq9kcewiko6mmih45f46wapn1b-ext-s3alias"
             }
         },
@@ -208,7 +208,7 @@
                 }
             },
             "S3AccessPoint": {
-                "ResourceARN": "arn:aws:s3:ap-northeast-1:178625946981:accesspoint/verification-vpc-origin-ap",
+                "ResourceARN": "arn:aws:s3:ap-northeast-1:123456789012:accesspoint/verification-vpc-origin-ap",
                 "Alias": "verification-vpc-jhm1khztfyat85bj4zrdkfo7i91khapn1b-ext-s3alias",
                 "VpcConfiguration": {
                     "VpcId": "vpc-0ae01826f906191af"
@@ -230,7 +230,7 @@
                 }
             },
             "S3AccessPoint": {
-                "ResourceARN": "arn:aws:s3:ap-northeast-1:178625946981:accesspoint/snowflake-verification-ap",
+                "ResourceARN": "arn:aws:s3:ap-northeast-1:123456789012:accesspoint/snowflake-verification-ap",
                 "Alias": "snowflake-verifi-qmkpa4gi8dwt3frn3i695qpha41c6apn1b-ext-s3alias"
             }
         },
@@ -249,7 +249,7 @@
                 }
             },
             "S3AccessPoint": {
-                "ResourceARN": "arn:aws:s3:ap-northeast-1:178625946981:accesspoint/fsxn-databricks-executor-test",
+                "ResourceARN": "arn:aws:s3:ap-northeast-1:123456789012:accesspoint/fsxn-databricks-executor-test",
                 "Alias": "fsxn-databricks-qtd8gqcc617e5jfxnn5c89kfrg1agapn1b-ext-s3alias"
             }
         },
@@ -268,7 +268,7 @@
                 }
             },
             "S3AccessPoint": {
-                "ResourceARN": "arn:aws:s3:ap-northeast-1:178625946981:accesspoint/my-s3-access-point",
+                "ResourceARN": "arn:aws:s3:ap-northeast-1:123456789012:accesspoint/my-s3-access-point",
                 "Alias": "my-s3-access-poi-47ryw9a1ywf5jaczr65pxtukcpbphapn1b-ext-s3alias"
             }
         },
@@ -287,7 +287,7 @@
                 }
             },
             "S3AccessPoint": {
-                "ResourceARN": "arn:aws:s3:ap-northeast-1:178625946981:accesspoint/fsxn-analytics-dev",
+                "ResourceARN": "arn:aws:s3:ap-northeast-1:123456789012:accesspoint/fsxn-analytics-dev",
                 "Alias": "fsxn-analytics-d-emase9hih8u3yemmaic6inea47x7rapn1b-ext-s3alias"
             }
         }

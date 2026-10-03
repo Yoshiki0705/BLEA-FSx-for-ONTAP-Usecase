@@ -89,9 +89,9 @@
                 "CRAWL_RUN_ID": "8381a439-f605-41a8-b232-99d95d78c371",
                 "typeOfData": "file"
             },
-            "CreatedBy": "arn:aws:sts::178625946981:assumed-role/Dev-BLEAFsxnDataAnalytics-DataAnalyticsGlueCrawlerR-GcIqUuxUus1T/AWS-Crawler",
+            "CreatedBy": "arn:aws:sts::123456789012:assumed-role/Dev-BLEAFsxnDataAnalytics-DataAnalyticsGlueCrawlerR-GcIqUuxUus1T/AWS-Crawler",
             "IsRegisteredWithLakeFormation": false,
-            "CatalogId": "178625946981",
+            "CatalogId": "123456789012",
             "VersionId": "1",
             "IsMultiDialectView": false,
             "IsMaterializedView": false

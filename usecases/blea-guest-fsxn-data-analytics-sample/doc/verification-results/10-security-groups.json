@@ -35,7 +35,7 @@
                 },
                 {
                     "Key": "aws:cloudformation:stack-id",
-                    "Value": "arn:aws:cloudformation:ap-northeast-1:178625946981:stack/Dev-BLEAFsxnDataAnalytics/7cd9ba00-5f42-11f1-a545-0626e09db33f"
+                    "Value": "arn:aws:cloudformation:ap-northeast-1:123456789012:stack/Dev-BLEAFsxnDataAnalytics/7cd9ba00-5f42-11f1-a545-0626e09db33f"
                 },
                 {
                     "Key": "Environment",
@@ -43,8 +43,8 @@
                 }
             ],
             "VpcId": "vpc-0809f5832b8d335e5",
-            "SecurityGroupArn": "arn:aws:ec2:ap-northeast-1:178625946981:security-group/sg-0556cc40bb91ad2bd",
-            "OwnerId": "178625946981",
+            "SecurityGroupArn": "arn:aws:ec2:ap-northeast-1:123456789012:security-group/sg-0556cc40bb91ad2bd",
+            "OwnerId": "123456789012",
             "GroupName": "Dev-BLEAFsxnDataAnalytics-NetworkingVpcGlueEndpointSecurityGroup15E9777B-UKLr3bzrKNi3",
             "Description": "Dev-BLEAFsxnDataAnalytics/Networking/Vpc/GlueEndpoint/SecurityGroup",
             "IpPermissions": [
@@ -85,7 +85,7 @@
             "Tags": [
                 {
                     "Key": "aws:cloudformation:stack-id",
-                    "Value": "arn:aws:cloudformation:ap-northeast-1:178625946981:stack/Dev-BLEAFsxnDataAnalytics/7cd9ba00-5f42-11f1-a545-0626e09db33f"
+                    "Value": "arn:aws:cloudformation:ap-northeast-1:123456789012:stack/Dev-BLEAFsxnDataAnalytics/7cd9ba00-5f42-11f1-a545-0626e09db33f"
                 },
                 {
                     "Key": "aws:cloudformation:stack-name",
@@ -105,8 +105,8 @@
                 }
             ],
             "VpcId": "vpc-0809f5832b8d335e5",
-            "SecurityGroupArn": "arn:aws:ec2:ap-northeast-1:178625946981:security-group/sg-038ad92f07c7436de",
-            "OwnerId": "178625946981",
+            "SecurityGroupArn": "arn:aws:ec2:ap-northeast-1:123456789012:security-group/sg-038ad92f07c7436de",
+            "OwnerId": "123456789012",
             "GroupName": "Dev-BLEAFsxnDataAnalytics-NetworkingGlueSecurityGroup714888AD-Ieg5w3z8ve8k",
             "Description": "Security group for AWS Glue Crawler",
             "IpPermissions": [
@@ -115,7 +115,7 @@
                     "UserIdGroupPairs": [
                         {
                             "Description": "Self-referencing for Glue Spark",
-                            "UserId": "178625946981",
+                            "UserId": "123456789012",
                             "GroupId": "sg-038ad92f07c7436de"
                         }
                     ],
@@ -150,7 +150,7 @@
                 },
                 {
                     "Key": "aws:cloudformation:stack-id",
-                    "Value": "arn:aws:cloudformation:ap-northeast-1:178625946981:stack/Dev-BLEAFsxnDataAnalytics/7cd9ba00-5f42-11f1-a545-0626e09db33f"
+                    "Value": "arn:aws:cloudformation:ap-northeast-1:123456789012:stack/Dev-BLEAFsxnDataAnalytics/7cd9ba00-5f42-11f1-a545-0626e09db33f"
                 },
                 {
                     "Key": "Repository",
@@ -166,8 +166,8 @@
                 }
             ],
             "VpcId": "vpc-0809f5832b8d335e5",
-            "SecurityGroupArn": "arn:aws:ec2:ap-northeast-1:178625946981:security-group/sg-0ce6a8df8c7d5da73",
-            "OwnerId": "178625946981",
+            "SecurityGroupArn": "arn:aws:ec2:ap-northeast-1:123456789012:security-group/sg-0ce6a8df8c7d5da73",
+            "OwnerId": "123456789012",
             "GroupName": "Dev-BLEAFsxnDataAnalytics-NetworkingFsxnSecurityGroup92491639-oHs6vO3Gqyxg",
             "Description": "Security group for FSx for NetApp ONTAP",
             "IpPermissions": [
@@ -273,8 +273,8 @@
                 }
             ],
             "VpcId": "vpc-0809f5832b8d335e5",
-            "SecurityGroupArn": "arn:aws:ec2:ap-northeast-1:178625946981:security-group/sg-0ef1661ddfcc1588f",
-            "OwnerId": "178625946981",
+            "SecurityGroupArn": "arn:aws:ec2:ap-northeast-1:123456789012:security-group/sg-0ef1661ddfcc1588f",
+            "OwnerId": "123456789012",
             "GroupName": "default",
             "Description": "default VPC security group",
             "IpPermissions": [
@@ -282,7 +282,7 @@
                     "IpProtocol": "-1",
                     "UserIdGroupPairs": [
                         {
-                            "UserId": "178625946981",
+                            "UserId": "123456789012",
                             "GroupId": "sg-0ef1661ddfcc1588f"
                         }
                     ],
@@ -327,7 +327,7 @@
                 },
                 {
                     "Key": "aws:cloudformation:stack-id",
-                    "Value": "arn:aws:cloudformation:ap-northeast-1:178625946981:stack/Dev-BLEAFsxnDataAnalytics/7cd9ba00-5f42-11f1-a545-0626e09db33f"
+                    "Value": "arn:aws:cloudformation:ap-northeast-1:123456789012:stack/Dev-BLEAFsxnDataAnalytics/7cd9ba00-5f42-11f1-a545-0626e09db33f"
                 },
                 {
                     "Key": "aws:cloudformation:stack-name",
@@ -335,8 +335,8 @@
                 }
             ],
             "VpcId": "vpc-0809f5832b8d335e5",
-            "SecurityGroupArn": "arn:aws:ec2:ap-northeast-1:178625946981:security-group/sg-03dcb5a3899edf63b",
-            "OwnerId": "178625946981",
+            "SecurityGroupArn": "arn:aws:ec2:ap-northeast-1:123456789012:security-group/sg-03dcb5a3899edf63b",
+            "OwnerId": "123456789012",
             "GroupName": "Dev-BLEAFsxnDataAnalytics-NetworkingVpcAthenaEndpointSecurityGroup4154C754-ZUlorlMPtOBu",
             "Description": "Dev-BLEAFsxnDataAnalytics/Networking/Vpc/AthenaEndpoint/SecurityGroup",
             "IpPermissions": [

@@ -3,7 +3,7 @@
         {
             "AvailabilityZoneId": "apne1-az4",
             "MapCustomerOwnedIpOnLaunch": false,
-            "OwnerId": "178625946981",
+            "OwnerId": "123456789012",
             "AssignIpv6AddressOnCreation": false,
             "Ipv6CidrBlockAssociationSet": [],
             "Tags": [
@@ -29,7 +29,7 @@
                 },
                 {
                     "Key": "aws:cloudformation:stack-id",
-                    "Value": "arn:aws:cloudformation:ap-northeast-1:178625946981:stack/Dev-BLEAFsxnDataAnalytics/7cd9ba00-5f42-11f1-a545-0626e09db33f"
+                    "Value": "arn:aws:cloudformation:ap-northeast-1:123456789012:stack/Dev-BLEAFsxnDataAnalytics/7cd9ba00-5f42-11f1-a545-0626e09db33f"
                 },
                 {
                     "Key": "Name",
@@ -40,7 +40,7 @@
                     "Value": "Dev-BLEAFsxnDataAnalytics"
                 }
             ],
-            "SubnetArn": "arn:aws:ec2:ap-northeast-1:178625946981:subnet/subnet-090d7ccc8cb2a2392",
+            "SubnetArn": "arn:aws:ec2:ap-northeast-1:123456789012:subnet/subnet-090d7ccc8cb2a2392",
             "EnableDns64": false,
             "Ipv6Native": false,
             "PrivateDnsNameOptionsOnLaunch": {
@@ -63,13 +63,13 @@
         {
             "AvailabilityZoneId": "apne1-az1",
             "MapCustomerOwnedIpOnLaunch": false,
-            "OwnerId": "178625946981",
+            "OwnerId": "123456789012",
             "AssignIpv6AddressOnCreation": false,
             "Ipv6CidrBlockAssociationSet": [],
             "Tags": [
                 {
                     "Key": "aws:cloudformation:stack-id",
-                    "Value": "arn:aws:cloudformation:ap-northeast-1:178625946981:stack/Dev-BLEAFsxnDataAnalytics/7cd9ba00-5f42-11f1-a545-0626e09db33f"
+                    "Value": "arn:aws:cloudformation:ap-northeast-1:123456789012:stack/Dev-BLEAFsxnDataAnalytics/7cd9ba00-5f42-11f1-a545-0626e09db33f"
                 },
                 {
                     "Key": "Environment",
@@ -100,7 +100,7 @@
                     "Value": "NetworkingVpcPrivateSubnet2Subnet4313381B"
                 }
             ],
-            "SubnetArn": "arn:aws:ec2:ap-northeast-1:178625946981:subnet/subnet-0d5d4c4b27429b626",
+            "SubnetArn": "arn:aws:ec2:ap-northeast-1:123456789012:subnet/subnet-0d5d4c4b27429b626",
             "EnableDns64": false,
             "Ipv6Native": false,
             "PrivateDnsNameOptionsOnLaunch": {

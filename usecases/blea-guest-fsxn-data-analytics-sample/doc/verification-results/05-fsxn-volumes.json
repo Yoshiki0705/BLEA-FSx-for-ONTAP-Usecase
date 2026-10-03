@@ -28,7 +28,7 @@
                 },
                 "SizeInBytes": 1073741824
             },
-            "ResourceARN": "arn:aws:fsx:ap-northeast-1:178625946981:volume/fs-008501f761785af19/fsvol-0faf0941b5a87cb81",
+            "ResourceARN": "arn:aws:fsx:ap-northeast-1:123456789012:volume/fs-008501f761785af19/fsvol-0faf0941b5a87cb81",
             "VolumeId": "fsvol-0faf0941b5a87cb81",
             "VolumeType": "ONTAP"
         },
@@ -61,7 +61,7 @@
                 },
                 "SizeInBytes": 107374182400
             },
-            "ResourceARN": "arn:aws:fsx:ap-northeast-1:178625946981:volume/fs-008501f761785af19/fsvol-020b716e990d08192",
+            "ResourceARN": "arn:aws:fsx:ap-northeast-1:123456789012:volume/fs-008501f761785af19/fsvol-020b716e990d08192",
             "VolumeId": "fsvol-020b716e990d08192",
             "VolumeType": "ONTAP"
         }
