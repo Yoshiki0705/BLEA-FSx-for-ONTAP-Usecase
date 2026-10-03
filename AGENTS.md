@@ -70,6 +70,12 @@ npx aws-cdk synth --app 'npx ts-node bin/blea-guest-fsxn-data-analytics-sample.t
 
 - Required elements: executive summary with conclusion, FAQ/common misconceptions, selection flowchart (mermaid OK), OT/IT security considerations (when applicable), staged adoption steps, Related Documents (back-links), ≥10 inline role-based lens reviews.
 
+### Writing-style criteria
+
+The writing-style rules the `ai-style` workflow enforces (the fail tier D1/D2/D5/D14, the
+warning tier, and the manual review that outranks every count) are documented in the Hub:
+https://github.com/Yoshiki0705/FSx-for-ONTAP-Adoption-Playbook/blob/main/docs/agent/writing-quality.md
+
 ### Before committing docs
 
 ```bash
