@@ -22,7 +22,7 @@
 - **workspaces**: `"usecases/*"` — 全 usecase がワークスペース
 - **cdk-nag はルート package.json にない**（各 usecase 単位の可能性）
 
-### ⚠️ 重大なギャップ（対応必須）
+### 重大なギャップ（対応必須）
 
 | 項目 | BLEA 本体 | 我々の現状 | 対応 |
 |------|----------|----------|------|
@@ -40,7 +40,7 @@
 3. CI の自動テストに注意
 4. コードリフォーマットの混在を避ける
 
-### ⚠️ AI Attribution ポリシー
+### AI Attribution ポリシー
 aws-samples 全体で以下が禁止されている可能性:
 - コミットメッセージに `Co-Authored-By: Claude` 等の AI attribution
 - PR body に AI 生成の明記
@@ -97,7 +97,7 @@ usecases/<name>/
 - **simple-git-hooks + lint-staged + git-secrets**
 - **workspaces**: `resources/bleafsi-shared-constructs/*`, `usecases/*`, `tools/*`
 
-### ⚠️ BLEA for FSI 特有の要件
+### BLEA for FSI 特有の要件
 
 | 項目 | BLEA for FSI | 我々の現状 | 対応 |
 |------|-------------|----------|------|
@@ -107,7 +107,7 @@ usecases/<name>/
 | TypeScript | ~5.0.4 | ~5.4.0 | 互換性あり |
 | shared-constructs | `resources/bleafsi-shared-constructs/` | 独自 shared/ | 構造合わせ |
 
-### ⚠️ 重大な発見: サイバーレジリエンスは既存ワークロード
+### 重大な発見: サイバーレジリエンスは既存ワークロード
 
 （前回調査と同じ — 省略）
 

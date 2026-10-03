@@ -75,11 +75,13 @@ BLEA for FSI currently provides governance base and compliance frameworks, but l
 
 ### Implementation Status
 
-- ✅ CDK code complete (TypeScript strict, 3 stacks)
-- ✅ 13 Jest tests passing
-- ✅ Workload stack deployed and verified (49 resources, TPS/ARP/SnapLock/Backup/Isolation confirmed)
-- ✅ Bilingual documentation with FISC mapping
-- ✅ Cost estimates included (~$625/month)
+| Item | Status |
+|---|---|
+| CDK code complete (TypeScript strict, 3 stacks) | ✅ |
+| 13 Jest tests passing | ✅ |
+| Workload stack deployed and verified (49 resources, TPS/ARP/SnapLock/Backup/Isolation confirmed) | ✅ |
+| Bilingual documentation with FISC mapping | ✅ |
+| Cost estimates included (~$625/month) | ✅ |
 
 ### Checklist
 

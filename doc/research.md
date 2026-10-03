@@ -622,14 +622,14 @@ if the maintainers are interested.
 - [Guidance for Deploying Enterprise Apps with FSx for ONTAP](https://aws.amazon.com/solutions/guidance/deploying-enterprise-apps-with-netapp-bluexp-workload-factory-for-aws-and-amazon-fsx-for-netapp-ontap/)
 - [Secure SFTP with Transfer Family + FSx for ONTAP S3 AP](https://aws.amazon.com/blogs/storage/secure-sftp-file-sharing-with-aws-transfer-family-amazon-fsx-for-netapp-ontap-and-s3-access-points/)
 
-### 競合 / 類似リポジトリ
+### 類似 / 関連リポジトリ
 
 - [aws-samples/amazon-fsx-for-netapp-ontap-python-client-examples](https://github.com/aws-samples/amazon-fsx-for-netapp-ontap-python-client-examples) — Python クライアント例
 - [aws-samples/amazon-eks-fsx-for-netapp-ontap](https://github.com/aws-samples/amazon-eks-fsx-for-netapp-ontap) — EKS + FSx for ONTAP
 - [rafalkrol-xyz/cdk-fsx-ontap](https://github.com/rafalkrol-xyz/cdk-fsx-ontap) — CDK L3 Construct (サードパーティ)
 - [aws-samples/aws-cdk-ecs-windows-fsx](https://github.com/aws-samples/aws-cdk-ecs-windows-fsx) — ECS + FSx Windows (Python CDK)
 
-**注記**: BLEA リポジトリに FSx / ONTAP / storage 関連の Issue や PR は存在しない（2026-06 時点）。本提案は完全に新規ユースケースとなる。
+**注記**: BLEA リポジトリに FSx for ONTAP / storage 関連の Issue や PR は存在しない（2026-06 時点）。本提案は完全に新規ユースケースとなる。
 
 ---
 

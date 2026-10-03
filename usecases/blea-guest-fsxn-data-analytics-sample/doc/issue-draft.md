@@ -19,7 +19,7 @@ I would like to propose a new guest system use case that demonstrates enterprise
 
 Enterprise organizations store critical business data on file servers (NFS/SMB), but this data remains siloed and inaccessible to analytics tools. Traditional approaches require copying file data to S3 and building ETL pipelines — adding cost, latency, and operational complexity.
 
-**This use case eliminates data duplication entirely**: file data on FSx for ONTAP is directly queryable via SQL through S3 Access Points, Glue Data Catalog, and Amazon Athena — with zero ETL.
+This use case removes the copy step: file data on FSx for ONTAP is queried via SQL through S3 Access Points, the Glue Data Catalog, and Amazon Athena, with no ETL pipeline.
 
 ### Motivation
 
@@ -58,19 +58,23 @@ Amazon FSx for NetApp ONTAP launched S3 Access Points in December 2025, making t
 
 ### Implementation Status
 
-- ✅ CDK code complete (TypeScript strict, aws-cdk-lib ^2.219.0)
-- ✅ 14 Jest tests passing (snapshot + assertion)
-- ✅ Real AWS deployment verified (ap-northeast-1, end-to-end data flow confirmed)
-- ✅ Bilingual documentation (Japanese primary + English)
-- ✅ Cost estimates included
+| Item | Status |
+|---|---|
+| CDK code complete (TypeScript strict, aws-cdk-lib ^2.219.0) | ✅ |
+| 14 Jest tests passing (snapshot + assertion) | ✅ |
+| Real AWS deployment verified (ap-northeast-1, end-to-end data flow confirmed) | ✅ |
+| Bilingual documentation (Japanese primary + English) | ✅ |
+| Cost estimates included | ✅ |
 
 ### Verified End-to-End Data Flow
 
-1. NFS write → FSx for ONTAP Volume ✅
-2. S3 AP ListObjects → file data visible ✅
-3. Glue Crawler → table auto-detected (300K rows, 45s) ✅
-4. Athena SQL query → results returned (14.5MB, 2.1s) ✅
-5. CloudWatch Alarms → monitoring active ✅
+| Step | Result | Status |
+|---|---|---|
+| NFS write → FSx for ONTAP Volume | written | ✅ |
+| S3 AP ListObjects | file data visible | ✅ |
+| Glue Crawler | table auto-detected (300K rows, 45s) | ✅ |
+| Athena SQL query | results returned (14.5MB, 2.1s) | ✅ |
+| CloudWatch Alarms | monitoring active | ✅ |
 
 ### Checklist
 

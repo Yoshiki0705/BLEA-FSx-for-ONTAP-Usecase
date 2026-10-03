@@ -23,17 +23,19 @@
 5. **ドキュメント**: bilingual (README_ja.md primary, README.md English)
 6. **セキュリティ**: security policy あり、credential 漏洩に敏感
 
-### Kono-san が Approve する PR の条件（推定）
+### Approve の条件（PR 履歴からの推定）
 
-1. ✅ BLEA の既存パターンに**厳密に**従っている
-2. ✅ ESLint / Prettier が通る
-3. ✅ `cdk synth` が成功する
-4. ✅ テストがパスする
-5. ✅ Conventional commits
-6. ✅ ドキュメントが bilingual
-7. ✅ 不要な依存がない (knip チェック)
-8. ✅ package-lock.json が正しく生成されている
-9. ⚠️ **新規ユースケース追加の前例がない** — メンテナーの判断次第
+| 条件 | 状態 |
+|---|---|
+| BLEA の既存パターンに厳密に従っている | ✅ |
+| ESLint / Prettier が通る | ✅ |
+| `cdk synth` が成功する | ✅ |
+| テストがパスする | ✅ |
+| Conventional commits | ✅ |
+| ドキュメントが bilingual | ✅ |
+| 不要な依存がない (knip チェック) | ✅ |
+| package-lock.json が正しく生成されている | ✅ |
+| 新規ユースケース追加の前例がない（メンテナーの判断次第） | ⚠️ |
 
 ---
 

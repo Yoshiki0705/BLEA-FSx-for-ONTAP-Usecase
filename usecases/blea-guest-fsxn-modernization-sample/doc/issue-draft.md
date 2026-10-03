@@ -67,11 +67,13 @@ BLEA currently provides compute-focused samples (ECS, EC2, Serverless API) but n
 
 ### Implementation Status
 
-- ✅ CDK code complete (TypeScript strict, single stack, 5 compute patterns)
-- ✅ 11 Jest tests passing (toggle ON/OFF behavior verified)
-- ✅ Deployed and verified (61 resources, EC2+Lambda+ECS+Batch confirmed)
-- ✅ Bilingual documentation with per-pattern guide
-- ✅ EKS Trident setup instructions included
+| Item | Status |
+|---|---|
+| CDK code complete (TypeScript strict, single stack, 5 compute patterns) | ✅ |
+| 11 Jest tests passing (toggle ON/OFF behavior verified) | ✅ |
+| Deployed and verified (61 resources, EC2+Lambda+ECS+Batch confirmed) | ✅ |
+| Bilingual documentation with per-pattern guide | ✅ |
+| EKS Trident setup instructions included | ✅ |
 
 ### Cost Estimate
 

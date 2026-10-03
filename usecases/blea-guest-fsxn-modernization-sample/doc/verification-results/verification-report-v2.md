@@ -16,10 +16,13 @@
 ## Resource Verification
 
 ### FSx for NetApp ONTAP
-- ✅ FileSystem (SINGLE_AZ_1, 1024 GiB, 128 MBps)
-- ✅ SVM (svm-platform)
-- ✅ NFS Volume (/shared, 100 GiB)
-- ✅ S3 Access Point Attachment
+
+| Resource | Status |
+|---|---|
+| FileSystem (SINGLE_AZ_1, 1024 GiB, 128 MBps) | ✅ |
+| SVM (svm-platform) | ✅ |
+| NFS Volume (/shared, 100 GiB) | ✅ |
+| S3 Access Point Attachment | ✅ |
 
 ### Compute Patterns
 
@@ -32,13 +35,19 @@
 | EKS | — | ⏸️ Disabled | Requires kubectlLayer or CfnCluster + manual setup |
 
 ### Operations & Protection
-- ✅ ServerlessOps: CapacityManager Lambda
-- ✅ DataProtection: AWS Backup Vault + Plan
-- ✅ Monitoring: 3 CloudWatch Alarms + SNS Topic
+
+| Resource | Status |
+|---|---|
+| ServerlessOps: CapacityManager Lambda | ✅ |
+| DataProtection: AWS Backup Vault + Plan | ✅ |
+| Monitoring: 3 CloudWatch Alarms + SNS Topic | ✅ |
 
 ### Networking
-- ✅ VPC (Isolated, no IGW/NAT)
-- ✅ VPC Endpoints: S3, CloudWatch Logs, SSM, SSM Messages, ECR, ECR Docker
+
+| Resource | Status |
+|---|---|
+| VPC (Isolated, no IGW/NAT) | ✅ |
+| VPC Endpoints: S3, CloudWatch Logs, SSM, SSM Messages, ECR, ECR Docker | ✅ |
 
 ## Lessons Learned (v2)
 
