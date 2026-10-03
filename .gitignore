@@ -26,6 +26,13 @@ node_modules/
 .tmp/
 *.tmp
 
+# Python
+.venv/
+__pycache__/
+
+# Agent task scratch
+.agents/
+
 # Private notes
 .private/
 
