@@ -5,7 +5,7 @@
 | Item | Value |
 |------|-------|
 | Stack Name | Dev-FSxNCyberResilience-Workload |
-| Account | 178625946981 |
+| Account | 123456789012 |
 | Region | ap-northeast-1 |
 | Deployment Time | ~23 min (1381 seconds) |
 | Total Resources | 49 |

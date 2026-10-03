@@ -5,7 +5,7 @@
 | Item | Value |
 |------|-------|
 | Stack Name | Dev-BLEAFsxnModernization |
-| Account | 178625946981 |
+| Account | 123456789012 |
 | Region | ap-northeast-1 |
 | Deployment Time | ~25 min (FSx for ONTAP) + 10 min (ECS stabilization) |
 | Total Resources | 61 |
