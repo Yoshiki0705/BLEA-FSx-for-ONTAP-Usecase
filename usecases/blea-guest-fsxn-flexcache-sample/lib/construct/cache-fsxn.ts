@@ -42,7 +42,11 @@ export class CacheFsxn extends Construct {
     this.fileSystemId = fs.ref;
     // Management endpoint: management.<fs-id>.fsx.<region>.amazonaws.com
     this.managementDnsName = cdk.Fn.join('', [
-      'management.', fs.ref, '.fsx.', cdk.Stack.of(this).region, '.amazonaws.com',
+      'management.',
+      fs.ref,
+      '.fsx.',
+      cdk.Stack.of(this).region,
+      '.amazonaws.com',
     ]);
 
     const svm = new fsx.CfnStorageVirtualMachine(this, 'SVM', {
