@@ -1,0 +1,83 @@
+---
+# BLEA FSx for ONTAP Use Cases
+
+> AWS CDK use-case templates for guest systems on Baseline Environment on AWS (BLEA),
+> built around Amazon FSx for NetApp ONTAP as enterprise file storage. Four
+> independent use cases cover file-data analytics through S3 Access Points with AWS Glue
+> and Amazon Athena, multi-layered cyber resilience for financial and public-sector
+> workloads, FlexCache-based distributed access between a headquarters origin and branch
+> caches, and a shared-storage modernization platform offering several selectable compute
+> patterns. The deliverable is the CDK/TypeScript code plus its documentation; templates
+> deploy into the reader's own AWS account and are intended for upstream contribution to
+> BLEA.
+
+## How to read this repository
+
+The repository is a TypeScript npm workspace (CDK v2). Each use case lives under
+`usecases/<name>/` with its own `bin/`, `lib/`, `test/`, and `doc/`, and shares common
+constructs, the ONTAP REST API custom resource, scripts, and templates from `shared/`.
+`npm ci` then `npm run build` and `npm test` build and test every workspace; `npx cdk synth`
+inside a use-case directory produces its template without deploying anything.
+
+The naming convention is deliberate: write **Amazon FSx for NetApp ONTAP** on first mention
+and **FSx for ONTAP** thereafter, and **S3 Access Points** in full. The repository's
+conventions and the output rules coding agents follow are in `AGENTS.md`.
+
+## Entry points
+
+- [README (English)](README.md): Primary hub. Overview of the four use cases, the build and
+  test commands, the shared modules, and the upstream contribution targets.
+- [README (Japanese)](README_ja.md): Japanese hub with the same scope.
+- [AGENTS.md](AGENTS.md): Conventions, naming and neutrality rules, and build/test commands
+  for coding agents.
+- [Use-case selection guide (Japanese)](doc/usecase-selection-guide.md): A decision tree that
+  maps a customer's starting problem to one of the four use cases, plus combination patterns
+  by customer type.
+
+## Use cases
+
+- [Data Analytics — README (English)](usecases/blea-guest-fsxn-data-analytics-sample/doc/README.md)
+  ([Japanese](usecases/blea-guest-fsxn-data-analytics-sample/doc/README_ja.md)): Enterprise
+  file storage on FSx for ONTAP integrated with AWS Glue and Amazon Athena through
+  S3 Access Points, enabling SQL analysis of file data without duplicating it.
+- [FlexCache Distributed Access — README (English)](usecases/blea-guest-fsxn-flexcache-sample/doc/README.md)
+  ([Japanese](usecases/blea-guest-fsxn-flexcache-sample/doc/README_ja.md)): A FlexCache
+  pattern that accelerates file access between a headquarters origin and branch-office caches,
+  giving distributed users local SSD performance over VPC peering.
+- [Modernization Platform — README (English)](usecases/blea-guest-fsxn-modernization-sample/doc/README.md)
+  ([Japanese](usecases/blea-guest-fsxn-modernization-sample/doc/README_ja.md)): FSx for ONTAP
+  as a shared-storage foundation for VMware/on-premises migration, with EC2, ECS, EKS, Lambda,
+  and AWS Batch compute patterns selectable via `parameter.ts`.
+- [Cyber Resilience — README (English)](usecases/guest-fsxn-cyber-resilience-sample/doc/README.md)
+  ([Japanese](usecases/guest-fsxn-cyber-resilience-sample/doc/README_ja.md)): A multi-layered
+  ransomware-defense pattern using FSx for ONTAP native security features across a
+  multi-account architecture, aimed at financial and public-sector workloads.
+
+## Architecture and reference docs
+
+- [NFS/SMB encryption guide (Japanese)](usecases/blea-guest-fsxn-data-analytics-sample/doc/nfs-smb-encryption-guide.md):
+  Steps to enable NFS and SMB in-transit encryption on the deployed FSx for ONTAP environment,
+  addressing the Government Cloud "encryption in transit" requirement.
+- [Cyber resilience architecture explainer (Japanese)](usecases/guest-fsxn-cyber-resilience-sample/doc/reference-arc-fsxn-cyber-resilience/fsxn-cyber-resilience-arch-readme.md):
+  How the multi-layered defense is structured and the business problem it addresses.
+- [FISC mapping (Japanese)](usecases/guest-fsxn-cyber-resilience-sample/doc/reference-arc-fsxn-cyber-resilience/fisc-mapping-fsxn-cyber-resilience.md):
+  How controls in the cyber-resilience use case map to the FISC security guidelines.
+- [Shared modules — README (Japanese)](shared/README.md): The reusable CDK constructs, the
+  ONTAP REST API custom resource, scripts, and templates shared across all four use cases.
+
+> **Cyber resilience note**: The cyber-resilience use case can create immutable
+> (SnapLock / WORM) and retention-governed resources. The documents above are linked only to
+> explain the architecture, not as "deploy this" instructions. A SnapLock or WORM/retention
+> feature removes the ability to delete data for a fixed period and is routinely wider in
+> blast radius than the single resource named — enable one only under an explicit human
+> instruction that names the retention value, after reading the teardown documentation.
+
+## Hub / related
+
+This repository is a spoke of the FSx for ONTAP adoption knowledge base. Start at the hub to
+reach the broader lifecycle- and topic-oriented knowledge and the workload entry map.
+
+- [FSx for ONTAP Adoption Playbook — llms.txt](https://github.com/Yoshiki0705/FSx-for-ONTAP-Adoption-Playbook/blob/main/llms.txt):
+  LLM-facing map of the hub repository.
+- [Workload entry map (Japanese)](https://github.com/Yoshiki0705/FSx-for-ONTAP-Adoption-Playbook/blob/main/docs/ja/reference/workload-entry-map.md):
+  How workloads map to the hub's knowledge and to the spoke repositories, including this one.
