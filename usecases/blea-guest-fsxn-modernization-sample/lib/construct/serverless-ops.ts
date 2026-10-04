@@ -161,8 +161,6 @@ exports.handler = async (event) => {
     // Trigger: SNS alarm topic → Lambda
     // When StorageCapacityUtilization alarm fires, it publishes to the alarm topic,
     // which triggers this Lambda to auto-expand storage.
-    this.capacityManagerFn.addEventSource(
-      new eventsources.SnsEventSource(props.alarmTopic),
-    );
+    this.capacityManagerFn.addEventSource(new eventsources.SnsEventSource(props.alarmTopic));
   }
 }
