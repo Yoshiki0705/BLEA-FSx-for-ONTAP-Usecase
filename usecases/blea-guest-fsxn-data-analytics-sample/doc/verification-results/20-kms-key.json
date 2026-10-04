@@ -1,8 +1,8 @@
 {
     "KeyMetadata": {
-        "AWSAccountId": "178625946981",
+        "AWSAccountId": "123456789012",
         "KeyId": "70d1f992-66cb-4116-863c-930fa17c62d1",
-        "Arn": "arn:aws:kms:ap-northeast-1:178625946981:key/70d1f992-66cb-4116-863c-930fa17c62d1",
+        "Arn": "arn:aws:kms:ap-northeast-1:123456789012:key/70d1f992-66cb-4116-863c-930fa17c62d1",
         "CreationDate": "2026-06-03T20:51:14.780000+09:00",
         "Enabled": true,
         "Description": "BLEA FSxN Data Analytics: Customer managed key for encryption at rest",
@@ -16,6 +16,6 @@
             "SYMMETRIC_DEFAULT"
         ],
         "MultiRegion": false,
-        "CurrentKeyMaterialId": "5d1f72d15a9a95afda179d9e45f2fc2ba14fee39aed5c65540c78dd93356c7e2"
+        "CurrentKeyMaterialId": "EXAMPLE-KEY-MATERIAL-ID"
     }
 }

@@ -1,9 +1,9 @@
 {
     "Stacks": [
         {
-            "StackId": "arn:aws:cloudformation:ap-northeast-1:178625946981:stack/Dev-BLEAFsxnModernization/712ca6d0-6083-11f1-ae8f-061c81c90471",
+            "StackId": "arn:aws:cloudformation:ap-northeast-1:123456789012:stack/Dev-BLEAFsxnModernization/712ca6d0-6083-11f1-ae8f-061c81c90471",
             "StackName": "Dev-BLEAFsxnModernization",
-            "ChangeSetId": "arn:aws:cloudformation:ap-northeast-1:178625946981:changeSet/cdk-deploy-change-set/074ff4ec-6d05-4e70-8b68-d87861156972",
+            "ChangeSetId": "arn:aws:cloudformation:ap-northeast-1:123456789012:changeSet/cdk-deploy-change-set/074ff4ec-6d05-4e70-8b68-d87861156972",
             "Description": "BLEA FSxN Modernization Platform (tag:blea-guest-fsxn-modernization-sample)",
             "Parameters": [
                 {
@@ -28,7 +28,7 @@
                 "CAPABILITY_NAMED_IAM",
                 "CAPABILITY_AUTO_EXPAND"
             ],
-            "RoleARN": "arn:aws:iam::178625946981:role/cdk-hnb659fds-cfn-exec-role-178625946981-ap-northeast-1",
+            "RoleARN": "arn:aws:iam::123456789012:role/cdk-hnb659fds-cfn-exec-role-123456789012-ap-northeast-1",
             "Tags": [
                 {
                     "Key": "Repository",

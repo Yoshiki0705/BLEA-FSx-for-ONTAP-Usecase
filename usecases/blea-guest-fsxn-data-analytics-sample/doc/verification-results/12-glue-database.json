@@ -4,6 +4,6 @@
         "Description": "Data catalog for FSx for NetApp ONTAP file data via S3 Access Point",
         "CreateTime": "2026-06-03T20:51:16+09:00",
         "CreateTableDefaultPermissions": [],
-        "CatalogId": "178625946981"
+        "CatalogId": "123456789012"
     }
 }

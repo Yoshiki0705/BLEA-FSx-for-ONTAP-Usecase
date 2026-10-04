@@ -2,13 +2,13 @@
     "MetricAlarms": [
         {
             "AlarmName": "Dev-BLEAFsxnDataAnalytics-MonitoringCpuUtilizationAlarmE52043EA-PADL2nMRTnXq",
-            "AlarmArn": "arn:aws:cloudwatch:ap-northeast-1:178625946981:alarm:Dev-BLEAFsxnDataAnalytics-MonitoringCpuUtilizationAlarmE52043EA-PADL2nMRTnXq",
+            "AlarmArn": "arn:aws:cloudwatch:ap-northeast-1:123456789012:alarm:Dev-BLEAFsxnDataAnalytics-MonitoringCpuUtilizationAlarmE52043EA-PADL2nMRTnXq",
             "AlarmDescription": "FSxN CPU utilization exceeds 80%.",
             "AlarmConfigurationUpdatedTimestamp": "2026-06-03T21:08:57.614000+09:00",
             "ActionsEnabled": true,
             "OKActions": [],
             "AlarmActions": [
-                "arn:aws:sns:ap-northeast-1:178625946981:Dev-BLEAFsxnDataAnalytics-MonitoringAlarmTopicAF62D4F1-ndpUDYcR2WBQ"
+                "arn:aws:sns:ap-northeast-1:123456789012:Dev-BLEAFsxnDataAnalytics-MonitoringAlarmTopicAF62D4F1-ndpUDYcR2WBQ"
             ],
             "InsufficientDataActions": [],
             "StateValue": "OK",
@@ -32,13 +32,13 @@
         },
         {
             "AlarmName": "Dev-BLEAFsxnDataAnalytics-MonitoringStorageCapacityAlarm00BED5E4-0k70OKKYKBQz",
-            "AlarmArn": "arn:aws:cloudwatch:ap-northeast-1:178625946981:alarm:Dev-BLEAFsxnDataAnalytics-MonitoringStorageCapacityAlarm00BED5E4-0k70OKKYKBQz",
+            "AlarmArn": "arn:aws:cloudwatch:ap-northeast-1:123456789012:alarm:Dev-BLEAFsxnDataAnalytics-MonitoringStorageCapacityAlarm00BED5E4-0k70OKKYKBQz",
             "AlarmDescription": "FSxN storage capacity utilization exceeds 80%.",
             "AlarmConfigurationUpdatedTimestamp": "2026-06-03T21:08:57.559000+09:00",
             "ActionsEnabled": true,
             "OKActions": [],
             "AlarmActions": [
-                "arn:aws:sns:ap-northeast-1:178625946981:Dev-BLEAFsxnDataAnalytics-MonitoringAlarmTopicAF62D4F1-ndpUDYcR2WBQ"
+                "arn:aws:sns:ap-northeast-1:123456789012:Dev-BLEAFsxnDataAnalytics-MonitoringAlarmTopicAF62D4F1-ndpUDYcR2WBQ"
             ],
             "InsufficientDataActions": [],
             "StateValue": "INSUFFICIENT_DATA",
@@ -61,13 +61,13 @@
         },
         {
             "AlarmName": "Dev-BLEAFsxnDataAnalytics-MonitoringThroughputUtilizationAlarm1966CAFC-eb3bT3CxbORN",
-            "AlarmArn": "arn:aws:cloudwatch:ap-northeast-1:178625946981:alarm:Dev-BLEAFsxnDataAnalytics-MonitoringThroughputUtilizationAlarm1966CAFC-eb3bT3CxbORN",
+            "AlarmArn": "arn:aws:cloudwatch:ap-northeast-1:123456789012:alarm:Dev-BLEAFsxnDataAnalytics-MonitoringThroughputUtilizationAlarm1966CAFC-eb3bT3CxbORN",
             "AlarmDescription": "FSxN throughput utilization exceeds 80%. NFS/SMB and S3 AP share this throughput.",
             "AlarmConfigurationUpdatedTimestamp": "2026-06-03T21:08:58.607000+09:00",
             "ActionsEnabled": true,
             "OKActions": [],
             "AlarmActions": [
-                "arn:aws:sns:ap-northeast-1:178625946981:Dev-BLEAFsxnDataAnalytics-MonitoringAlarmTopicAF62D4F1-ndpUDYcR2WBQ"
+                "arn:aws:sns:ap-northeast-1:123456789012:Dev-BLEAFsxnDataAnalytics-MonitoringAlarmTopicAF62D4F1-ndpUDYcR2WBQ"
             ],
             "InsufficientDataActions": [],
             "StateValue": "OK",

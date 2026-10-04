@@ -1,9 +1,9 @@
 {
     "Stacks": [
         {
-            "StackId": "arn:aws:cloudformation:ap-northeast-1:178625946981:stack/Dev-BLEAFsxnDataAnalytics/7cd9ba00-5f42-11f1-a545-0626e09db33f",
+            "StackId": "arn:aws:cloudformation:ap-northeast-1:123456789012:stack/Dev-BLEAFsxnDataAnalytics/7cd9ba00-5f42-11f1-a545-0626e09db33f",
             "StackName": "Dev-BLEAFsxnDataAnalytics",
-            "ChangeSetId": "arn:aws:cloudformation:ap-northeast-1:178625946981:changeSet/cdk-deploy-change-set/43b402cd-9977-4ed3-aca5-3fd8c0c3f0a6",
+            "ChangeSetId": "arn:aws:cloudformation:ap-northeast-1:123456789012:changeSet/cdk-deploy-change-set/43b402cd-9977-4ed3-aca5-3fd8c0c3f0a6",
             "Description": "BLEA FSxN Data Analytics sample for guest accounts (tag:blea-guest-fsxn-data-analytics-sample)",
             "Parameters": [
                 {
@@ -23,7 +23,7 @@
                 "CAPABILITY_NAMED_IAM",
                 "CAPABILITY_AUTO_EXPAND"
             ],
-            "RoleARN": "arn:aws:iam::178625946981:role/cdk-hnb659fds-cfn-exec-role-178625946981-ap-northeast-1",
+            "RoleARN": "arn:aws:iam::123456789012:role/cdk-hnb659fds-cfn-exec-role-123456789012-ap-northeast-1",
             "Tags": [
                 {
                     "Key": "Repository",
