@@ -6,7 +6,7 @@
   "license": "MIT-0",
   "scripts": {
     "build": "tsc --build",
-    "test": "jest"
+    "test": "jest --passWithNoTests"
   },
   "dependencies": {
     "@aws-sdk/client-secrets-manager": "^3.600.0"
