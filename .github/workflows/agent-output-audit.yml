@@ -60,8 +60,8 @@ jobs:
           echo "$MD_FILES" > /tmp/changed_md.txt
           echo "$TEXT_FILES" > /tmp/changed_text.txt
 
-          MD_COUNT=$(echo "$MD_FILES" | grep -c . || echo 0)
-          TEXT_COUNT=$(echo "$TEXT_FILES" | grep -c . || echo 0)
+          [ -z "$MD_FILES" ] && MD_COUNT=0 || MD_COUNT=$(printf '%s\n' "$MD_FILES" | grep -c .)
+          [ -z "$TEXT_FILES" ] && TEXT_COUNT=0 || TEXT_COUNT=$(printf '%s\n' "$TEXT_FILES" | grep -c .)
           echo "md_count=$MD_COUNT" >> "$GITHUB_OUTPUT"
           echo "text_count=$TEXT_COUNT" >> "$GITHUB_OUTPUT"
 
