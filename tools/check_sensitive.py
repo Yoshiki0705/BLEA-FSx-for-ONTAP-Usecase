@@ -135,8 +135,8 @@ def selftest() -> int:
         ("account-id", "const a = '123456789012';", False),
         ("account-id", "const big = 1234567890123;", False),  # 13 digits
         ("account-id", "ids: 123456789012,111122223333", True),  # gitleaks:allow
-        ("ipv4", "host: '10.0.0.35'", True),  # gitleaks:allow
-        ("ipv4", "host: '10.0.0.35/32'", True),  # gitleaks:allow
+        ("ipv4", "host: '10.255.255.1'", True),  # gitleaks:allow
+        ("ipv4", "host: '10.255.255.1/32'", True),  # gitleaks:allow
         ("ipv4", "vpcCidr: '10.0.0.0/16'", False),  # gitleaks:allow
         ("ipv4", "peer: '203.0.113.10'", False),
         ("ipv4", "any: '0.0.0.0/0'", False),
