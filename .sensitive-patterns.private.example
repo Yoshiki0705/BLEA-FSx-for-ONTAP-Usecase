@@ -1,0 +1,7 @@
+# Copy to .sensitive-patterns.private (gitignored) and list the real values that must never be
+# committed, one extended regular expression per line. tools/check_sensitive.py reads the copy
+# only when it exists and reports `path:line: local-pattern` without printing the match.
+#
+# The values below are placeholders. Replace them; do not commit the copy.
+111122223333
+my-real-hostname\.example

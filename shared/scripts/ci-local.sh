@@ -36,15 +36,12 @@ fi
 # 3. Personal info check
 echo ""
 echo "▶ Personal info check..."
-if grep -rn "178625946981\|351389403887" usecases/ shared/ --include="*.ts" 2>/dev/null | grep -v node_modules | grep -v cdk.out | grep -q .; then
-  echo "  ❌ Real AWS account ID found!"
-  grep -rn "178625946981\|351389403887" usecases/ shared/ --include="*.ts" | grep -v node_modules | grep -v cdk.out
-  ERRORS=$((ERRORS + 1))
-elif grep -rn "@gmail.com\|@netapp.com" usecases/ shared/ --include="*.ts" 2>/dev/null | grep -v node_modules | grep -v cdk.out | grep -v example.com | grep -q .; then
-  echo "  ❌ Personal email found!"
-  ERRORS=$((ERRORS + 1))
-else
+# Generic rules plus .sensitive-patterns.private when present (gitignored)
+if python3 tools/check_sensitive.py; then
   echo "  ✅ No personal info"
+else
+  echo "  ❌ Account ID, IP address, email, or local pattern found (see above)"
+  ERRORS=$((ERRORS + 1))
 fi
 
 # 4. Tests

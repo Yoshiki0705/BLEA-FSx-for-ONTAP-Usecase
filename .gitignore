@@ -11,6 +11,8 @@
 .env.*
 *.pem
 *.key
+# Real values for tools/check_sensitive.py (never commit)
+.sensitive-patterns.private
 
 # CDK
 cdk.out/
