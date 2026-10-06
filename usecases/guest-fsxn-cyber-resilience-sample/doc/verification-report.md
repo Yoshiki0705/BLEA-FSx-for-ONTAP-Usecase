@@ -18,7 +18,7 @@
 
 | Resource | ID | Status |
 |----------|-----|--------|
-| FileSystem (Multi-AZ, 1024 GiB, 128 MBps) | fs-0f199a4d0798e4fe5 | ✅ AVAILABLE |
+| FileSystem (Multi-AZ, 1024 GiB, 128 MBps) | fs-0123456789abcdef4 | ✅ AVAILABLE |
 | SVM (svm-resilience) | Created | ✅ CREATED |
 | Production Volume (vol_production, 100 GiB) | Created | ✅ CREATED |
 | SnapLock Enterprise Volume (snaplock_backup, 50 GiB) | Created | ✅ CREATED |
