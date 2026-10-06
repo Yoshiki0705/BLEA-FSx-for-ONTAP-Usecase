@@ -32,18 +32,11 @@ jobs:
         run: npx prettier --check "usecases/**/*.ts" "shared/**/*.ts"
 
       - name: Check for hardcoded secrets or personal info
+        # Generic rules only (account ID, host IP, email). Real values stay in the
+        # gitignored .sensitive-patterns.private; see tools/check_sensitive.py.
         run: |
-          echo "Checking for real AWS account IDs..."
-          if grep -rn "178625946981\|351389403887" usecases/ shared/ --include="*.ts" | grep -v node_modules | grep -v cdk.out; then
-            echo "::error::Real AWS account ID found in source files"
-            exit 1
-          fi
-          echo "Checking for personal email addresses..."
-          if grep -rn "@gmail.com\|@netapp.com\|@amazon.com" usecases/ shared/ --include="*.ts" | grep -v node_modules | grep -v cdk.out | grep -v "example.com"; then
-            echo "::error::Personal email address found in source files"
-            exit 1
-          fi
-          echo "✅ No secrets or personal info found"
+          python3 tools/check_sensitive.py --selftest
+          python3 tools/check_sensitive.py
 
       - name: Test
         run: npm test

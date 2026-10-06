@@ -22,7 +22,7 @@ repos:
 
       - id: no-personal-info
         name: no personal info in source
-        entry: bash -c 'if grep -rn "178625946981\|351389403887\|@gmail.com\|@netapp.com" "$@" 2>/dev/null | grep -v example.com; then echo "Personal info found!"; exit 1; fi'
+        entry: python3 tools/check_sensitive.py
         language: system
         types: [ts]
         pass_filenames: true
