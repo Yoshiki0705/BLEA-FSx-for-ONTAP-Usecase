@@ -46,16 +46,16 @@
                 "DeploymentType": "SINGLE_AZ_1",
                 "Endpoints": {
                     "Intercluster": {
-                        "DNSName": "intercluster.fs-008501f761785af19.fsx.ap-northeast-1.amazonaws.com",
+                        "DNSName": "intercluster.<fs-id>.fsx.ap-northeast-1.amazonaws.com",
                         "IpAddresses": [
-                            "10.0.0.35",
-                            "10.0.0.134"
+                            "<intercluster-ip-1>",
+                            "<intercluster-ip-2>"
                         ]
                     },
                     "Management": {
-                        "DNSName": "management.fs-008501f761785af19.fsx.ap-northeast-1.amazonaws.com",
+                        "DNSName": "management.<fs-id>.fsx.ap-northeast-1.amazonaws.com",
                         "IpAddresses": [
-                            "10.0.0.235"
+                            "<management-ip>"
                         ]
                     }
                 },

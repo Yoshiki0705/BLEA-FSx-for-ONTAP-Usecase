@@ -4,24 +4,24 @@
             "CreationTime": "2026-06-03T21:08:56.317000+09:00",
             "Endpoints": {
                 "Iscsi": {
-                    "DNSName": "iscsi.svm-01bd3e9ac588f7112.fs-008501f761785af19.fsx.ap-northeast-1.amazonaws.com",
+                    "DNSName": "iscsi.<svm-id>.<fs-id>.fsx.ap-northeast-1.amazonaws.com",
                     "IpAddresses": [
-                        "10.0.0.97",
-                        "10.0.0.5"
+                        "<iscsi-ip-1>",
+                        "<iscsi-ip-2>"
                     ],
                     "Ipv6Addresses": []
                 },
                 "Management": {
-                    "DNSName": "svm-01bd3e9ac588f7112.fs-008501f761785af19.fsx.ap-northeast-1.amazonaws.com",
+                    "DNSName": "<svm-id>.<fs-id>.fsx.ap-northeast-1.amazonaws.com",
                     "IpAddresses": [
-                        "10.0.0.217"
+                        "<svm-ip>"
                     ],
                     "Ipv6Addresses": []
                 },
                 "Nfs": {
-                    "DNSName": "svm-01bd3e9ac588f7112.fs-008501f761785af19.fsx.ap-northeast-1.amazonaws.com",
+                    "DNSName": "<svm-id>.<fs-id>.fsx.ap-northeast-1.amazonaws.com",
                     "IpAddresses": [
-                        "10.0.0.217"
+                        "<svm-ip>"
                     ],
                     "Ipv6Addresses": []
                 }
