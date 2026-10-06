@@ -50,12 +50,19 @@ Amazon FSx for NetApp ONTAP のネイティブセキュリティ機能を活用�
    ```
 4. ONTAP バージョン要件:
    - Tamperproof Snapshot (TPS): ONTAP 9.12+
-   - ARP/AI: ONTAP 9.13+（learning → active 遷移は 30 日後に手動実行）
+   - ARP: 稼働するモデルと学習期間は ONTAP の版とボリューム種別で決まります。FlexVol では 9.16.1 以降が ARP/AI で学習期間はなく、9.10.1〜9.15.1 は旧世代 ARP で、NAS FlexVol に 30 日の学習期間があります（詳細は下記）
    - SnapLock Enterprise: ONTAP 9.7+
 
 ### ARP learning → active 遷移手順
 
-ARP は初期デプロイ時に `learning` モードで動作します。30 日間の学習期間完了後、手動で active モードに遷移してください:
+この遷移が要るかどうかは、稼働している ARP の世代で決まります。
+
+- 旧世代 ARP（FlexVol は 9.10.1〜9.15.1、FlexGroup は 9.13.1〜9.17.1）: NAS FlexVol で 30 日の学習期間があります。9.13.1 以降はアクティブへ自動で切り替わります
+- ARP/AI（FlexVol は 9.16.1 以降、FlexGroup は 9.18.1 以降）: 学習期間はなく、有効化した直後から保護します。30 日待つ必要はありません
+
+版とボリューム種別による違いと出典は [ARP の世代と学習期間（Hub ノート）](https://github.com/Yoshiki0705/FSx-for-ONTAP-Adoption-Playbook/blob/main/docs/ja/domains/data-protection/notes/snaplock-and-layered-ransomware-readiness.md) にあります。区分は `documented` で、このリポジトリでは実測していません。稼働中のモデルは `security anti-ransomware` の `version` で確認できます。
+
+旧世代 ARP で学習期間の後に手動で active モードへ移す場合は、次のコマンドを使います:
 
 ```bash
 # ONTAP CLI (SSH or System Manager)

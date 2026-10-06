@@ -114,9 +114,11 @@ npx cdk deploy Dev-FSxNCyberResilience-Workload \
   --require-approval never
 ```
 
-### Step 7: ARP learning → active 遷移（30日後）
+### Step 7: ARP learning → active 遷移（旧世代 ARP のみ）
 
-ARP は 30 日間の学習期間後に手動で active モードに遷移します:
+この手順は旧世代 ARP（FlexVol は 9.10.1〜9.15.1）にだけ関係します。旧世代 ARP は NAS FlexVol で 30 日の学習期間を経てから active へ移り、9.13.1 以降は自動で切り替わります。FlexVol で 9.16.1 以降の ARP/AI には学習期間がなく、有効化した直後から保護するので、30 日待つ必要はありません。FlexGroup の境界と出典は [ARP の世代と学習期間（Hub ノート）](https://github.com/Yoshiki0705/FSx-for-ONTAP-Adoption-Playbook/blob/main/docs/ja/domains/data-protection/notes/snaplock-and-layered-ransomware-readiness.md) にあります（`documented`、このリポジトリでは実測していません）。
+
+旧世代 ARP を手動で active モードへ移す場合:
 
 ```bash
 # ONTAP REST API 経由

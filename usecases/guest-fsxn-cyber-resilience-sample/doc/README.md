@@ -50,12 +50,19 @@ A multi-layered cyber resilience solution leveraging Amazon FSx for NetApp ONTAP
    ```
 4. ONTAP version requirements:
    - Tamperproof Snapshot (TPS): ONTAP 9.12+
-   - ARP/AI: ONTAP 9.13+ (learning → active transition after 30-day period, manual)
+   - ARP: the running model and its learning period depend on the ONTAP version and the volume type. On FlexVol, 9.16.1 and later run ARP/AI with no learning period; 9.10.1–9.15.1 run the earlier ARP, which has a 30-day learning period on NAS FlexVol (details below)
    - SnapLock Enterprise: ONTAP 9.7+
 
 ### ARP Learning → Active Transition
 
-ARP starts in `learning` mode at initial deployment. After 30 days of learning, manually transition to active mode:
+Whether this transition applies depends on which ARP generation is running.
+
+- Earlier ARP (FlexVol 9.10.1–9.15.1, FlexGroup 9.13.1–9.17.1): 30-day learning period on NAS FlexVol. From 9.13.1 it switches to active automatically
+- ARP/AI (FlexVol 9.16.1 and later, FlexGroup 9.18.1 and later): no learning period; protection starts as soon as it is enabled. There is no 30-day wait
+
+The version and volume-type boundaries and their sources are in [ARP generations and learning periods (Hub note, Japanese)](https://github.com/Yoshiki0705/FSx-for-ONTAP-Adoption-Playbook/blob/main/docs/ja/domains/data-protection/notes/snaplock-and-layered-ransomware-readiness.md). They are `documented`, not measured in this repository. Check the running model with the `version` field of `security anti-ransomware`.
+
+To move the earlier ARP to active mode manually after its learning period:
 
 ```bash
 # ONTAP CLI (SSH or System Manager)
