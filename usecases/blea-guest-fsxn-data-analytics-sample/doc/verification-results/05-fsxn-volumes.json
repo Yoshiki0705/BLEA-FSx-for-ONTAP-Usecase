@@ -2,7 +2,7 @@
     "Volumes": [
         {
             "CreationTime": "2026-06-03T21:09:33+09:00",
-            "FileSystemId": "fs-008501f761785af19",
+            "FileSystemId": "fs-0123456789abcdef0",
             "Lifecycle": "CREATED",
             "Name": "svm_analytics_root",
             "OntapConfiguration": {
@@ -11,7 +11,7 @@
                 "SecurityStyle": "UNIX",
                 "SizeInMegabytes": 1024,
                 "StorageEfficiencyEnabled": false,
-                "StorageVirtualMachineId": "svm-01bd3e9ac588f7112",
+                "StorageVirtualMachineId": "svm-0123456789abcdef0",
                 "StorageVirtualMachineRoot": true,
                 "TieringPolicy": {
                     "Name": "NONE"
@@ -28,13 +28,13 @@
                 },
                 "SizeInBytes": 1073741824
             },
-            "ResourceARN": "arn:aws:fsx:ap-northeast-1:123456789012:volume/fs-008501f761785af19/fsvol-0faf0941b5a87cb81",
-            "VolumeId": "fsvol-0faf0941b5a87cb81",
+            "ResourceARN": "arn:aws:fsx:ap-northeast-1:123456789012:volume/fs-0123456789abcdef0/fsvol-0123456789abcdef8",
+            "VolumeId": "fsvol-0123456789abcdef8",
             "VolumeType": "ONTAP"
         },
         {
             "CreationTime": "2026-06-03T21:11:00.264000+09:00",
-            "FileSystemId": "fs-008501f761785af19",
+            "FileSystemId": "fs-0123456789abcdef0",
             "Lifecycle": "CREATED",
             "Name": "vol_data",
             "OntapConfiguration": {
@@ -43,7 +43,7 @@
                 "SecurityStyle": "UNIX",
                 "SizeInMegabytes": 102400,
                 "StorageEfficiencyEnabled": true,
-                "StorageVirtualMachineId": "svm-01bd3e9ac588f7112",
+                "StorageVirtualMachineId": "svm-0123456789abcdef0",
                 "StorageVirtualMachineRoot": false,
                 "TieringPolicy": {
                     "CoolingPeriod": 31,
@@ -61,8 +61,8 @@
                 },
                 "SizeInBytes": 107374182400
             },
-            "ResourceARN": "arn:aws:fsx:ap-northeast-1:123456789012:volume/fs-008501f761785af19/fsvol-020b716e990d08192",
-            "VolumeId": "fsvol-020b716e990d08192",
+            "ResourceARN": "arn:aws:fsx:ap-northeast-1:123456789012:volume/fs-0123456789abcdef0/fsvol-0123456789abcdef0",
+            "VolumeId": "fsvol-0123456789abcdef0",
             "VolumeType": "ONTAP"
         }
     ]

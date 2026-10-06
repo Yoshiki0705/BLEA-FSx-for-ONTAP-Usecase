@@ -50,13 +50,13 @@
 
 | # | リソース | 状態 | 検証方法 |
 |---|---------|------|---------|
-| 1 | FSx for ONTAP FileSystem (fs-008501f761785af19) | ✅ AVAILABLE | aws fsx describe-file-systems |
+| 1 | FSx for ONTAP FileSystem (fs-0123456789abcdef0) | ✅ AVAILABLE | aws fsx describe-file-systems |
 | 2 | FSx for ONTAP デプロイタイプ | ✅ SINGLE_AZ_1 | 同上 |
 | 3 | FSx for ONTAP スループット | ✅ 128 MBps | 同上 |
 | 4 | FSx for ONTAP ストレージ | ✅ 1024 GiB | 同上 |
 | 5 | KMS 暗号化 | ✅ CMK (70d1f992...) | 同上 |
-| 6 | FSx for ONTAP SVM (svm-01bd3e9ac588f7112) | ✅ CREATED | aws fsx describe-storage-virtual-machines |
-| 7 | FSx for ONTAP Volume (fsvol-020b716e990d08192) | ✅ CREATED | aws fsx describe-volumes |
+| 6 | FSx for ONTAP SVM (svm-0123456789abcdef0) | ✅ CREATED | aws fsx describe-storage-virtual-machines |
+| 7 | FSx for ONTAP Volume (fsvol-0123456789abcdef0) | ✅ CREATED | aws fsx describe-volumes |
 | 8 | ストレージ効率化 | ✅ Enabled | 同上 |
 | 9 | FabricPool Tiering | ✅ AUTO | 同上 |
 | 10 | S3 Access Point (fsxn-analytics-dev) | ✅ AVAILABLE | aws fsx describe-s3-access-point-attachments |
@@ -130,15 +130,15 @@ npx cdk destroy --all --force
 aws athena delete-work-group --work-group fsxn-analytics --recursive-delete-option
 
 # 3. FSx for ONTAP Volume 削除
-aws fsx delete-volume --volume-id fsvol-020b716e990d08192 --ontap-configuration '{"SkipFinalBackup":true}'
+aws fsx delete-volume --volume-id fsvol-0123456789abcdef0 --ontap-configuration '{"SkipFinalBackup":true}'
 # → 待機 90秒
 
 # 4. FSx for ONTAP SVM 削除
-aws fsx delete-storage-virtual-machine --storage-virtual-machine-id svm-01bd3e9ac588f7112
+aws fsx delete-storage-virtual-machine --storage-virtual-machine-id svm-0123456789abcdef0
 # → 待機 90秒
 
 # 5. FSx for ONTAP FileSystem 削除
-aws fsx delete-file-system --file-system-id fs-008501f761785af19
+aws fsx delete-file-system --file-system-id fs-0123456789abcdef0
 # → 待機 20-30分
 
 # 6. CloudFormation スタック再削除

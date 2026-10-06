@@ -9,7 +9,7 @@
 | # | リソース | 結果 |
 |---|---------|------|
 | 1 | CloudFormation Stack (41 resources) | ✅ CREATE_COMPLETE |
-| 2 | FSx for ONTAP FileSystem (fs-07d114047cc4f18c9) | ✅ AVAILABLE, SINGLE_AZ_1, 1024 GiB, 128 MBps |
+| 2 | FSx for ONTAP FileSystem (fs-0123456789abcdef3) | ✅ AVAILABLE, SINGLE_AZ_1, 1024 GiB, 128 MBps |
 | 3 | KMS 暗号化 | ✅ CMK (60819c31...) |
 | 4 | SVM (svm-platform) | ✅ CREATED |
 | 5 | NFS Volume (vol_shared) | ✅ CREATED, StorageEfficiency: true, Tiering: AUTO |

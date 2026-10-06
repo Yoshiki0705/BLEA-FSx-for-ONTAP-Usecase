@@ -3,7 +3,7 @@
         {
             "OwnerId": "123456789012",
             "CreationTime": "2026-06-03T20:51:42.590000+09:00",
-            "FileSystemId": "fs-008501f761785af19",
+            "FileSystemId": "fs-0123456789abcdef0",
             "FileSystemType": "ONTAP",
             "Lifecycle": "AVAILABLE",
             "StorageCapacity": 1024,
@@ -17,7 +17,7 @@
                 "eni-03275d1843567b489"
             ],
             "KmsKeyId": "arn:aws:kms:ap-northeast-1:123456789012:key/70d1f992-66cb-4116-863c-930fa17c62d1",
-            "ResourceARN": "arn:aws:fsx:ap-northeast-1:123456789012:file-system/fs-008501f761785af19",
+            "ResourceARN": "arn:aws:fsx:ap-northeast-1:123456789012:file-system/fs-0123456789abcdef0",
             "Tags": [
                 {
                     "Key": "aws:cloudformation:stack-name",

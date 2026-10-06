@@ -14,8 +14,8 @@
 
 | Verification Item | Result | Evidence |
 |-------------------|--------|----------|
-| Origin FSx for ONTAP AVAILABLE | ✅ | fs-0380d7ab21cd60c88 |
-| Cache FSx for ONTAP AVAILABLE | ✅ | fs-03e24173614609736 |
+| Origin FSx for ONTAP AVAILABLE | ✅ | fs-0123456789abcdef1 |
+| Cache FSx for ONTAP AVAILABLE | ✅ | fs-0123456789abcdef2 |
 | VPC Peering active | ✅ | pcx-05ea7c88a293172f9 |
 | FlexCache CR Lambda executed | ✅ | Lambda log: flexcache_cr Create |
 | Metrics Lambda → CloudWatch | ✅ | 4 metrics published to FSx for ONTAP/FlexCache namespace |
@@ -26,7 +26,7 @@
 
 ```
 Namespace: FSx for ONTAP/FlexCache
-Dimension: FileSystemId = fs-03e24173614609736
+Dimension: FileSystemId = fs-0123456789abcdef2
 
 Metrics:
 - CacheHitRatio: 85.0%
