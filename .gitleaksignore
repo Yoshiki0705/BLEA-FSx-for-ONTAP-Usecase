@@ -1,0 +1,2 @@
+# False positive: the CDK asset content hash (S3Key) in a Jest snapshot, not a credential.
+d0d08471e727ac2f00f0c472b690f0156d791b9a:usecases/blea-guest-fsxn-flexcache-sample/test/__snapshots__/flexcache.test.ts.snap:generic-api-key:814
