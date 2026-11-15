@@ -811,7 +811,7 @@ exports.handler = async (event) => {
       "Properties": {
         "Code": {
           "S3Bucket": "cdk-hnb659fds-assets-123456789012-ap-northeast-1",
-          "S3Key": "07a90cc3efdfc34da22208dcd9d211f06f5b0e01b21e778edc7c3966b1f61d57.zip",
+          "S3Key": "5c9fd00ba20b9f0f8161f2bd2ccae0f9c29df2b76d34155b8bf281abc354adc8.zip",
         },
         "Description": "AWS CDK resource provider framework - onEvent (Test/FlexCache/Provider)",
         "Environment": {
@@ -835,7 +835,7 @@ exports.handler = async (event) => {
             "Arn",
           ],
         },
-        "Runtime": "nodejs22.x",
+        "Runtime": "nodejs24.x",
         "Timeout": 900,
       },
       "Type": "AWS::Lambda::Function",
