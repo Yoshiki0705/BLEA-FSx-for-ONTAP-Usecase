@@ -108,6 +108,18 @@ jobs:
           done < /tmp/changed_md.txt
           exit $EXITCODE
 
+      # A claim that a vendor cannot do something, used as a design premise, with nobody
+      # having asked the vendor. This repository has no Makefile and no other Python step,
+      # so the interpreter is set up here. It runs on the whole tree rather than on changed
+      # files only: the baseline is what limits it to new claims, and a changed-files filter
+      # would also miss a stale baseline entry left behind by an edit.
+      - name: Set up Python
+        uses: actions/setup-python@0b93645e9fea7318ecaed2b359559ac225c90a2b # v5.3.0
+        with:
+          python-version: '3.13'
+      - name: Check evidence for claims of vendor absence
+        run: python3 scripts/check_evidence_claims.py
+
       - name: Leak check (changed text files)
         if: steps.changed.outputs.text_count != '0'
         env:
