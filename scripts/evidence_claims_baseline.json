@@ -1,0 +1,41 @@
+{
+  "$comment": [
+    "Claims of vendor absence that predate scripts/check_evidence_claims.py.",
+    "Not an approval. The gate ratchets: nothing new may be added without a",
+    "ledger entry, and an entry here that no longer matches any line fails too,",
+    "so a line cannot be edited while leaving its old fingerprint behind.",
+    "Shrinking this file is the work. Regenerate with --update-baseline only",
+    "after deciding that each newly added line genuinely predates the gate."
+  ],
+  "baseline": {
+    "doc/research.md": [
+      "4669b7d021",
+      "4b74dfc902",
+      "63e8ec7363"
+    ],
+    "usecases/blea-guest-fsxn-data-analytics-sample/doc/nfs-smb-encryption-guide.md": [
+      "e58582de71"
+    ],
+    "usecases/blea-guest-fsxn-flexcache-sample/doc/README.md": [
+      "217134e787"
+    ],
+    "usecases/blea-guest-fsxn-modernization-sample/doc/README_ja.md": [
+      "738deb0d84"
+    ],
+    "usecases/blea-guest-fsxn-modernization-sample/doc/issue-draft.md": [
+      "60b8aa278d"
+    ],
+    "usecases/blea-guest-fsxn-modernization-sample/doc/verification-results/verification-report-v2.md": [
+      "21db649986"
+    ],
+    "usecases/blea-guest-fsxn-modernization-sample/doc/verification-results/verification-report.md": [
+      "ec402c8370"
+    ],
+    "usecases/guest-fsxn-cyber-resilience-sample/doc/issue-draft.md": [
+      "0257ca7da1"
+    ],
+    "usecases/guest-fsxn-cyber-resilience-sample/doc/reference-arc-fsxn-cyber-resilience/fsxn-cyber-resilience-arch-readme.md": [
+      "0e09677bb1"
+    ]
+  }
+}
